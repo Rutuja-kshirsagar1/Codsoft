@@ -182,4 +182,35 @@ matplotlib, seaborn → data visualization
 
 scikit-learn → preprocessing & ML models
 
-joblib → saving trained model
+
+task 4 : credit card fraud detection
+This project aims to detect fraudulent credit card transactions using machine learning techniques. It leverages Python-based data science tools to build, evaluate, and deploy a predictive model that flags suspicious activity.
+
+## 📊 Dataset 
+
+
+The dataset used is the [Kaggle Credit Card Fraud Detection dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud), which contains transactions made by European cardholders in September 2013. It includes:
+- 284,807 transactions
+- 492 fraud cases (highly imbalanced)
+- Features are anonymized (V1–V28) via PCA, plus `Time`, `Amount`, and `Class` (target)
+
+## 🧠 Project Workflow
+
+1. **Data Preprocessing**
+   - Handle missing values (if any)
+   - Normalize `Amount` and `Time`
+   - Address class imbalance using techniques like SMOTE or undersampling
+
+2. **Exploratory Data Analysis (EDA)**
+   - Visualize distributions, correlations, and fraud patterns
+   - Use `Seaborn`, `Matplotlib`, and `Pandas` profiling
+
+3. **Model Building**
+   - Algorithms: Logistic Regression, Random Forest, XGBoost, etc.
+   - Evaluation metrics: Precision
+   - 
+4. **Model Evaluation**
+   - Confusion matrix heatmap
+   - Cross-validation
+   - Feature importance analysis
+
