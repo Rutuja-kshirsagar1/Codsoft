@@ -1,12 +1,19 @@
 import streamlit as st
 import numpy as np
-import joblib as jb
 
 # Title
 st.title("Titanic Survival Prediction Using Linear Regression")
 
 # Load the model
-survival_model = jb.load("taitanic_survival_prediction.pkl")
+import joblib as jb
+import os
+
+# Get the current directory 
+BASE_DIR = os.path.dirname(__file__)
+
+# Load the model from the repo
+model_path = os.path.join(BASE_DIR, "taitanic_survival_prediction.pkl")
+survival_model = jb.load(model_path)
 
 
 # Input fields
@@ -30,4 +37,5 @@ if st.button("Predict Survival"):
     else :
      st.write("not survived" )
     st.success("Thank you for using the Titanic Survival Predictor!")
+
 
