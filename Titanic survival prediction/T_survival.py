@@ -6,7 +6,7 @@ import joblib as jb
 st.title("Titanic Survival Prediction Using Linear Regression")
 
 # Load the model
-survival_model = jb.load("D:\\internship works\\codsoft\\taitanic_survival_prediction.pkl")
+survival_model = jb.load("taitanic_survival_prediction.pkl")
 
 
 # Input fields
@@ -30,3 +30,4 @@ if st.button("Predict Survival"):
     else :
      st.write("not survived" )
     st.success("Thank you for using the Titanic Survival Predictor!")
+
