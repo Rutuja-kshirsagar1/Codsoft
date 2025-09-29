@@ -8,7 +8,7 @@ import os
 st.title("Titanic Survival Prediction Using Linear Regression")
 
 # Load the model
-survival_model = jb.load("D:\\internship works\\codsoft\\taitanic_survival_prediction.pkl")
+survival_model = jb.load("https://github.com/Rutuja-kshirsagar1/Codsoft/blob/main/Titanic%20survival%20prediction/taitanic_survival_prediction.pkl")
 
 
 # Get the current directory 
@@ -40,6 +40,7 @@ if st.button("Predict Survival"):
     else :
      st.write("not survived" )
     st.success("Thank you for using the Titanic Survival Predictor!")
+
 
 
 
