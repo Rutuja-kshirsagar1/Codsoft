@@ -1,7 +1,6 @@
 streamlit
-pandas
-numpy
-scikit-learn
+scikit-learn==3.11.3
+pandas==3.11.3
+numpy==3.11.3
 joblib
-seaborn
-matplotlib
+
