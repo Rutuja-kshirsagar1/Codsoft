@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 # Load your trained model and encoders
-model = joblib.load("D:\internship works\codsoft\sales_adv_prdict.pkl")
+model = joblib.load("sales prediction/sales_adv_prdict.pkl")
 
 
 st.title(" Future sales Prediction App")
@@ -25,3 +25,4 @@ if st.button("Predict Sales"):
     # Display results
     st.success(f"🎯 Predicted sales: {prediction:.2f}")
     st.write(f"🧮 Predicted sales: **{prediction:.2f}**")
+
